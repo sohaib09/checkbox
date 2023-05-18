@@ -1,0 +1,29 @@
+input[type=checkbox] {
+  /* Hide the actual checkbox */
+  opacity: 0;
+  width: 25px;
+  height: 25px;
+}
+
+input[type=checkbox] + label:before {
+  /* Styles for unchecked state */
+  display: inline-block;
+  content: "";
+  font-size: 22px !important;
+  text-align: center;
+  line-height: 1.2;
+  border-radius: 2px;
+  height: 25px;
+  width: 25px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #ba9876;
+  margin-right: 10px;
+  margin-bottom: -5px !important;
+  color: #FFF;
+}
+
+input[type=checkbox]:checked + label:before {
+  /* Styles for checked state */
+  content: "\2713";
+}
